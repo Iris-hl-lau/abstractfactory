@@ -15,12 +15,15 @@ using namespace std;
  * Maze prototype.
  */
 class maze {
+    room* r;
+    door* d;
+    wall* w;
 public:
     ~maze() = default;
     virtual void print() = 0;
-//    void add_room(room* r);
-//    void add_door(door* d);
-//    void add_wall(wall* w);
+    void add_room(room* r) {r = r;};
+    void add_door(door* d) {d = d};
+    void add_wall(wall* w) {w = w};
 };
 
 #endif //ABSTRACTFACTORY_MAZE_HPP

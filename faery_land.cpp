@@ -7,20 +7,20 @@
 
 maze *faery_land::make_maze() {
     cout << "Making maze." << endl;
-    return new fae;
+    return new faery_maze;
 }
 
 wall *faery_land::make_wall() {
     cout << "Making wall." << endl;
-    return new wall;
+    return new faery_wall;
 }
 
 room *faery_land::make_room() {
     cout << "Making room." << endl;
-    return new room;
+    return new faery_room;
 }
 
 door *faery_land::make_door(room* a, room* b) {
     cout << "Making door." << endl;
-    return new door;
+    return new faery_door(a, b);
 }

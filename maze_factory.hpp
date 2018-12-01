@@ -10,8 +10,6 @@
 #include "door.hpp"
 #include "wall.hpp"
 
-
-
 /**
  * Maze factory prototype.
  */

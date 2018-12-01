@@ -8,10 +8,11 @@
 #include "faery_door.hpp"
 #include "faery_room.hpp"
 #include "faery_wall.hpp"
+#include "faery_maze.hpp"
 #include <iostream>
 using namespace std;
 
-class faery_land : public virtual maze_factory {
+class faery_land : public maze_factory {
 public:
     ~faery_land() = default;
     maze* make_maze() override;

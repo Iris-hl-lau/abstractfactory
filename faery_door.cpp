@@ -10,3 +10,13 @@
 void faery_door::print() {
     cout << "Faery door." << endl;
 }
+
+/**
+ * Constructor of faery door
+ * @param a Faery room
+ * @param b  Faery room
+ */
+faery_door::faery_door(room *a, room *b) {
+    room_a = a;
+    room_b = b;
+}
