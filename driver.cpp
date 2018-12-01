@@ -5,10 +5,11 @@
 int main() {
     maze_game mazegame;
     maze* maze_faery = mazegame.create_maze(*(new faery_land()));
-
+    maze_faery->print();
     //maze_factory* futuristic_dystopian = new futuristic();
 
-
+    delete maze_faery;
+    //delete futuristic_dystopian;
 
     return 0;
 }

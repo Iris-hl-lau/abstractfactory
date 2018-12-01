@@ -22,8 +22,8 @@ public:
     ~maze() = default;
     virtual void print() = 0;
     void add_room(room* r) {r = r;};
-    void add_door(door* d) {d = d};
-    void add_wall(wall* w) {w = w};
+    void add_door(door* d) {d = d;};
+    void add_wall(wall* w) {w = w;};
 };
 
 #endif //ABSTRACTFACTORY_MAZE_HPP
